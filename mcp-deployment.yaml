@@ -12,6 +12,7 @@ spec:
       labels:
         app: mcp-server
     spec:
+      serviceAccountName: mcp-server-sa
       containers:
       - name: mcp
         image: samcolon/mcp-server:latest
@@ -23,3 +24,4 @@ spec:
             secretKeyRef:
               name: gemini-api-key
               key: GEMINI_API_KEY
+
