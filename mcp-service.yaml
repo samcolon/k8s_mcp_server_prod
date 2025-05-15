@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: mcp-service
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:
     app: mcp-server
   ports:
